@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".IncomeActivity">
+
+    <Button
+        android:id="@+id/main_menu_btn"
+        android:layout_width="138dp"
+        android:layout_height="35dp"
+        android:background="@color/button"
+        android:onClick="onClickMainMenu"
+        android:text="@string/main_menu"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/addIncome"
+        android:layout_width="208dp"
+        android:layout_height="194dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickAddIncome"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/incomeLab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/plus" />
+
+    <ListView
+        android:id="@+id/income_list"
+        android:layout_width="412dp"
+        android:layout_height="287dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeLab"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/incomeLab"
+        android:layout_width="289dp"
+        android:layout_height="36dp"
+        android:text="@string/income_history"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+</android.support.constraint.ConstraintLayout>

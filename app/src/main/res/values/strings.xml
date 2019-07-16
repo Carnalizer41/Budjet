@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Budjet</string>
+    <string name="regular">Регулярное</string>
+    <string name="entertainment">Развлечения</string>
+    <string name="gifts">Подарки</string>
+    <string name="big">Большие покупки</string>
+    <string name="self">Образование</string>
+    <string name="total">Общие расходы</string>
+    <string name="expense_history">История расходов</string>
+    <string name="income_history">История дохода</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="back">Назад</string>
+    <string name="choose">Выберите категорию</string>
+    <string name="expense">Расход</string>
+    <string name="income">Доход</string>
+    <string name="categoty_history">История категории</string>
+    <string name="food">Еда</string>
+    <string name="wear">Одежда</string>
+    <string name="account">Оплата счетов</string>
+    <string name="drive">Проезд</string>
+    <string name="soap">Гигиена</string>
+    <string name="gift">Подарки</string>
+    <string name="cafe">Кафе и рестораны</string>
+    <string name="cinema">Кино и театр</string>
+    <string name="sport">Спорт</string>
+    <string name="books">Книги</string>
+    <string name="studying">Обучение</string>
+    <string name="repair">Ремонт</string>
+    <string name="flowers">Цветы</string>
+    <string name="tech">Техника</string>
+    <string name="support">Благотвори- тельность</string>
+    <string name="history">История</string>
+</resources>

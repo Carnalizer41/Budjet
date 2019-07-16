@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ChooseExpense">
+
+    <Button
+        android:id="@+id/main_menu_btn"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:background="@color/button"
+        android:onClick="onClickMainMenu"
+        android:text="@string/main_menu"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="189dp"
+        android:layout_height="35dp"
+        android:background="@color/button"
+        android:onClick="onClickBack"
+        android:text="@string/back"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="357dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/choose"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/drive_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/drive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wear_cat"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/food_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/drive_cat"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/wear_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/wear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/tech_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/tech"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/study_cat"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_cat"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/account_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wear_cat"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/study_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/studying"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/account_cat"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drive_cat"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/soap_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/soap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/books_cat"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/study_cat"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/books_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/books"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_cat"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <Button
+        android:id="@+id/sport_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/sport"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/soap_cat"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tech_cat"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <Button
+        android:id="@+id/repair_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/repair"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gifts_cat"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sport_cat"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/flowers_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/flowers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/books_cat"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/gifts_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/gift"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/flowers_cat"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soap_cat"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/support_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/support"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowers_cat"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/cafe_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/cafe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/support_cat"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifts_cat"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/cinema_cat"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@color/pink"
+        android:onClick="onClickAddExpense"
+        android:text="@string/cinema"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cafe_cat"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repair_cat"
+        app:layout_constraintVertical_bias="0.176" />
+
+</android.support.constraint.ConstraintLayout>
